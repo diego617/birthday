@@ -215,18 +215,18 @@ header{
 }
 @media (max-width: 560px) {
 	.candela{
-		top: 66.6%;
+		top: 65%;
 		left: 48.5%;
 		background-color: greenyellow;
 	}
 	.capa-cake{
-		top: 77.3%; ;
+		top: 77.2%; ;
 	}
 	.vela{
-		top: 74%;
+		top: 72%;
 	}
 	.vela-base{
-		top: 71%;
+		top: 70%;
 	}
 	.mecha{
 		top: 70.7%;
