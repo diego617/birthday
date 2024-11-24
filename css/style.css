@@ -1,49 +1,43 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-
 *{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: "Pacifico", cursive;
+	background-color: #090909;
 }
 :root{
 	--color-fresa: #d53032;
 	--color-chocolate: #7B3F00;
 }
-body{
-	font-family: "Pacifico", cursive;
-	background-color: #090909;
-}
 .container{
-	width: 80%;
-	margin: 0 auto;
-	display: grid;
-	min-height: 100vh;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	padding-bottom: 70px;
-}
-.body-cake{
-	position: relative;
-	width: 100%;
 	display: flex;
-	flex-direction: column;
-	justify-content: end
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
 }
-span{
-	margin: 0 auto;
-	width: 250px;
-/*	border: 1px solid blue;*/
+section.body-cake{
+	position: relative;
+	width: 98%;
+	height: 350px;
+	
 }
-.base{
-	margin-top: -50px;
+section div.base{
+	position: absolute;
+	left: 50%;
+	top: 220px;
+	transform: translate(-50%, -50%);
 	width: 265px;
 	height: 120px;
 	border-radius: 100%;
 	background-color: #cccccc;
 }
-.cake{
-	z-index: 1;
+section div.cake{
+	position: absolute;
+	left: 50%;
+	top: 155px;
+	transform: translate(-50%, -50%);
+	z-index: 2;
 	width: 250px;
 	height: 120px;
 	border-radius: 50%;
@@ -66,18 +60,17 @@ span{
 							0px 40px 0px var(--color-chocolate),
 							0px 46px 0px var(--color-chocolate),
 							0px 56px 0px var(--color-chocolate);
-
 }
-.capa-cake{
+section div.capa-cake{
 	position: absolute;
-	top: 76.5%;
+	top: 145px;
   left: 50%;
   transform: translate(-50%, -50%);
 	width: 250px;
 	height: 100px;
 	border-radius: 50%;
 	background-color: #f0e4d0;/* #FFFFCC;*/
-	z-index: 10;
+	z-index: 3;
 	&::before{
 		top: 35px;
 		left: 25px;
@@ -91,12 +84,12 @@ span{
 		perspective: 800px;
   	perspective-origin: 50% 50%;
   	transform: rotateX(50deg) rotateY(-2deg);
-		z-index: 20;
+		z-index: 3;
 	}
 }
-.vela{
+section div.vela{
 	position: absolute;
-	top: 67.5%;
+	top: 110px;
   left: 50%;
   transform: translate(-50%, -50%);
 	z-index: 12;
@@ -105,9 +98,9 @@ span{
 	background-color: #a61861;
 	border-radius: 4px 4px 4px 4px;
 }
-.vela-base{
+section div.vela-base{
 	position: absolute;
-	top: 63%;
+	top: 83px;
   left: 50%;
   transform: translate(-50%, -50%);
 	z-index: 13;
@@ -116,10 +109,10 @@ span{
 	background-color: #824a8a;
 	border-radius: 50%;
 }
-.mecha{
+section div.mecha{
 	z-index: 14;
 	position: absolute;
-	top: 62.5%;
+	top: 80px;
   left: 50%;
   transform: translate(-50%, -50%);
 	width: 4px;
@@ -127,21 +120,21 @@ span{
 	background-color: rgb(51, 41, 41);
 	border-radius: 4px;
 }
-.candela{
+section div.candela{
 	z-index: 15; 
 	position: absolute;
 	border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;
 	width: 16px;
 	height: 35px;
-	top: 56.5%;
-  left: 48%;
+	top: 62px;
+  left: 50%;
   transform: translate(-50%, -50%);
 	background-color: orange;
 	box-shadow: 0px -4px 20px 15px rgb(240, 205, 89,0.3);
 	cursor: pointer;
 	animation: sway 1s ease-in-out alternate infinite;
 }
-@keyframes sway {
+/*@keyframes sway {
   0% {
     transform: rotate(0deg);
   }
@@ -151,45 +144,38 @@ span{
   100% {
     transform: rotate(-5deg);
   }
-}
-#fresa1,#fresa2{
-	position: relative;
-	top: 10px
-}
-#fresa1 .fresa-1{
-	position: absolute;
-	top: 0%;
-  left: 62%;
-	width: 40px;
-	height: 40px;
-  transform: translate(-50%, -50%);
-	z-index: 30;
-
-	transform: rotateZ(45deg);
-}
-#fresa2 .fresa-2{
-	position: absolute;
-	z-index: 30;
-	width: 40px;
-	height: 40px;
-	top: 0%;
-  left: 20%;
-  transform: translate(-50%, -50%);
+}*/
+section img.fresa-1{
 	transform: rotateZ(-45deg);
 }
-
-
-
-.activate{
+section img.fresa-2{
+	transform: rotateZ(45deg);
+}
+section div.imagen{
+	background-color: rgb(240, 228, 208,.0);
+	z-index: 50;
+	position: absolute;
+	width: 160px;
+	top: 125px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: space-between;
+}
+section img{
+	background-color: rgb(240, 228, 208,.0);
+	width: 40px;
+	height: 40px;
+}
+section div.activate{
 	background-color: #090909;
 	box-shadow: none;
 }
-/* **** */
 header{
-	position: absolute;
+	z-index: 1000;
+	position: fixed;
 	width: 100%;
 	top: -5%;
-	/*margin: 0 auto;*/
 	display: flex;
 	justify-content: space-between;
 }
@@ -211,35 +197,3 @@ header{
 	opacity: 0;
   pointer-events: none;
 }
-
- /*@media (max-width: 768px) {
-	.container{
-		width: 98%;
-	}
-	.candela{
-		top: 62.5%;
-		left: 48.5%;
-	}
-	.capa-cake{
-		top: 77.2%; ;
-	}
-	.vela{
-		top: 70%;
-	}
-	.vela-base{
-		top: 67%;
-	}
-	.mecha{
-		top: 66.5%;
-	}
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-	.candela{
-		left: 49.2%;
-	}
-}
-@media (min-width: 1024px) {
-  .candela{
-		left: 49.6%;
-	}
-}*/
