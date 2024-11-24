@@ -1,0 +1,233 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: "Pacifico", cursive;
+	background-color: #090909;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 70px ;
+}
+:root{
+	--color-fresa: #d53032;
+	--color-chocolate: #7B3F00;
+}
+.body-cake{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: end
+}
+span{
+	margin: 0 auto;
+	width: 250px;
+/*	border: 1px solid blue;*/
+}
+.base{
+	margin-top: -50px;
+	width: 265px;
+	height: 120px;
+	border-radius: 100%;
+	background-color: #cccccc;
+}
+.cake{
+	z-index: 1;
+	width: 250px;
+	height: 120px;
+	border-radius: 50%;
+	background-color:var(--color-chocolate);     
+	box-shadow: 0px 2px 0px var(--color-chocolate),
+							0px 4px 0px var(--color-chocolate),
+							0px 6px 0px var(--color-chocolate),
+							0px 8px 0px var(--color-chocolate),
+							0px 10px 0px var(--color-chocolate),
+							0px 12px 0px var(--color-chocolate),
+							0px 14px 0px var(--color-chocolate),
+							0px 16px 0px #f0e4d0,
+							0px 18px 0px #f0e4d0,
+							0px 20px 0px #f0e4d0,
+							0px 22px 0px #f0e4d0,
+							0px 24px 0px #f0e4d0,
+							0px 26px 0px #f0e4d0,
+							0px 32px 0px var(--color-chocolate),
+							0px 36px 0px var(--color-chocolate),
+							0px 40px 0px var(--color-chocolate),
+							0px 46px 0px var(--color-chocolate),
+							0px 56px 0px var(--color-chocolate);
+
+}
+.capa-cake{
+	position: absolute;
+	/*top: 469px;
+	left: 120px;*/
+	top: 77.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	width: 250px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #f0e4d0;/* #FFFFCC;*/
+	z-index: 10;
+	&::before{
+		top: 35px;
+		left: 25px;
+		width: 200px;
+		text-align: center;
+		font-size: 1.3rem;
+		font-weight: 700;
+		position: absolute;
+		content: 'Feliz Cumpleaños Nataly';
+		color: var(--color-fresa);
+		perspective: 800px;
+  	perspective-origin: 50% 50%;
+  	transform: rotateX(50deg) rotateY(-2deg);
+		z-index: 20;
+	}
+}
+.vela{
+	position: absolute;
+	top: 74%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	z-index: 12;
+	width: 18px;
+	height: 58px;
+	background-color: #a61861;
+	border-radius: 4px 4px 4px 4px;
+}
+.vela-base{
+	position: absolute;
+	top: 71%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	z-index: 13;
+	width: 18px;
+	height: 6px;
+	background-color: #824a8a;
+	border-radius: 50%;
+}
+.mecha{
+	z-index: 14;
+	position: absolute;
+	top: 70.7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	width: 4px;
+	height: 10px;
+	background-color: rgb(51, 41, 41);
+	border-radius: 4px;
+}
+.candela{
+	z-index: 15; 
+	position: absolute;
+	border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;
+	width: 16px;
+	height: 35px;
+	top: 66.8%;
+  left: 49.2%;
+  transform: translate(-50%, -50%);
+	background-color: orange;
+	box-shadow: 0px -4px 20px 15px rgb(240, 205, 89,0.3);
+	cursor: pointer;
+	animation: sway 1s ease-in-out alternate infinite;
+}
+@keyframes sway {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+#fresa1,#fresa2{
+	position: relative;
+	top: 10px
+}
+#fresa1 .fresa-1{
+	position: absolute;
+	top: 0%;
+  left: 62%;
+	width: 40px;
+	height: 40px;
+  transform: translate(-50%, -50%);
+	z-index: 30;
+
+	transform: rotateZ(45deg);
+}
+#fresa2 .fresa-2{
+	position: absolute;
+	z-index: 30;
+	width: 40px;
+	height: 40px;
+	top: 0%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+	transform: rotateZ(-45deg);
+}
+
+
+
+.activate{
+	background-color: #090909;
+	box-shadow: none;
+}
+/* **** */
+header{
+	position: absolute;
+	width: 100%;
+	top: -5%;
+	/*margin: 0 auto;*/
+	display: flex;
+	justify-content: space-between;
+}
+.papel{
+  top: 0%; 
+  left: 50%; 
+  transform: translateX(-50%);
+  transition: transform 2s ease-in-out;
+}
+.papel img{
+	width: 30px;
+	height: 30px;
+}
+
+.papel.caido {
+	transform: translateY(95vh);
+}
+.papel.oculto{
+	opacity: 0;
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+	.candela{
+		left: 48.5%;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.candela{
+		left: 49.2%;
+	}
+}
+@media (min-width: 1024px) {
+  .candela{
+		left: 49.6%;
+	}
+}
+footer{
+	width: 100%;
+}
