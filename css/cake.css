@@ -1,7 +1,5 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-
 
 *{
 	padding: 0;
@@ -88,7 +86,7 @@ span{
 		font-size: 1.3rem;
 		font-weight: 700;
 		position: absolute;
-		content: 'Feliz Cumpleaños Natali';
+		content: 'Feliz Cumpleaños NatalYYY';
 		color: var(--color-fresa);
 		perspective: 800px;
   	perspective-origin: 50% 50%;
@@ -213,11 +211,11 @@ header{
 	opacity: 0;
   pointer-events: none;
 }
- /*@media (max-width: 768px) {
+
+ @media (max-width: 768px) {
 	.candela{
-		top: 64%;
+		top: 62.5%;
 		left: 48.5%;
-		background-color: rgb(39, 171, 94);
 	}
 	.capa-cake{
 		top: 77.2%; ;
@@ -226,10 +224,10 @@ header{
 		top: 70%;
 	}
 	.vela-base{
-		top: 69%;
+		top: 67%;
 	}
 	.mecha{
-		top: 68%;
+		top: 66.5%;
 	}
 }
 @media (min-width: 768px) and (max-width: 1024px) {
