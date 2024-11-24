@@ -213,11 +213,11 @@ header{
 	opacity: 0;
   pointer-events: none;
 }
-@media (max-width: 560px) {
+ /*@media (max-width: 768px) {
 	.candela{
 		top: 64%;
 		left: 48.5%;
-		background-color: rgb(47, 47, 255);
+		background-color: rgb(39, 171, 94);
 	}
 	.capa-cake{
 		top: 77.2%; ;
@@ -232,7 +232,7 @@ header{
 		top: 68%;
 	}
 }
-@media (min-width: 560px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 	.candela{
 		left: 49.2%;
 	}
@@ -241,7 +241,7 @@ header{
   .candela{
 		left: 49.6%;
 	}
-}
+}*/
 footer{
 	width: 100%;
 }
