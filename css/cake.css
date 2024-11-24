@@ -6,6 +6,10 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+:root{
+	--color-fresa: #d53032;
+	--color-chocolate: #7B3F00;
+}
 body{
 	font-family: "Pacifico", cursive;
 	background-color: #090909;
@@ -16,11 +20,8 @@ body{
 	display: grid;
 	min-height: 100vh;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 70px ;
-}
-:root{
-	--color-fresa: #d53032;
-	--color-chocolate: #7B3F00;
+	grid-template-rows: 1fr;
+	padding-bottom: 70px;
 }
 .body-cake{
 	width: 100%;
@@ -213,6 +214,9 @@ header{
 }
 
  @media (max-width: 768px) {
+	.container{
+		width: 98%;
+	}
 	.candela{
 		top: 62.5%;
 		left: 48.5%;
